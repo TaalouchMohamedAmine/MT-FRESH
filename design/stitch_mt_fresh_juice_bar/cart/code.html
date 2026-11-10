@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "secondary-fixed": "#70f8e8", "surface-tint": "#ab3500", "tertiary-container": "#c78f00", "on-secondary": "#ffffff", "secondary-fixed-dim": "#4fdbcc", "error-container": "#ffdad6", "primary-fixed": "#ffdbd0", "surface-container-low": "#f0f4fd", "error": "#ba1a1a", "primary-fixed-dim": "#ffb59d", "on-primary-container": "#5f1900", "on-surface": "#171c23", "primary-container": "#ff6b35", "secondary-container": "#70f8e8", "inverse-on-surface": "#edf1fb", "on-tertiary-container": "#432e00", "surface-container": "#eaeef8", "on-tertiary-fixed-variant": "#5e4200", "surface": "#f8f9ff", "primary": "#ab3500", "inverse-primary": "#ffb59d", "on-primary": "#ffffff", "tertiary": "#7c5800", "on-error": "#ffffff", "surface-bright": "#f8f9ff", "on-tertiary": "#ffffff", "on-secondary-fixed": "#00201d", "tertiary-fixed": "#ffdea8", "on-error-container": "#93000a", "secondary": "#006a62", "background": "#f8f9ff", "surface-container-high": "#e4e8f2", "surface-variant": "#dee2ec", "surface-container-highest": "#dee2ec", "on-secondary-fixed-variant": "#005049", "on-tertiary-fixed": "#271900", "outline-variant": "#e1bfb5", "outline": "#8d7168", "surface-container-lowest": "#ffffff", "on-background": "#171c23", "on-secondary-container": "#007168", "on-primary-fixed-variant": "#832600", "on-surface-variant": "#594139", "surface-dim": "#d6dae4", "tertiary-fixed-dim": "#ffba20", "on-primary-fixed": "#390c00", "inverse-surface": "#2c3138" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "gutter-desktop": "1.5rem", "space-xl": "2rem", "gutter-tablet": "1.25rem", "space-lg": "1.5rem", "margin-desktop": "3rem", "gutter": "1rem", "space-md": "1rem", "space-xs": "0.5rem", "space-2xl": "3rem", "space-2xs": "0.25rem", "margin": "1rem", "space-sm": "0.75rem", "margin-tablet": "2rem" }, fontFamily: { "display-hero": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-md": ["Inter"], "body-lg": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "display-hero-mobile": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "label-lg": ["Plus Jakarta Sans"] }, fontSize: { "display-hero": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "700" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><img alt="MT FRESH Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP04ziPPc1bEV_U1VmtRUrxBmHDW4DOHXQmwXoEGLh-ClK67eTP-2i9PYq11jhDI7lDKzcUm7a_sX_RpID9j6N69jV3hgrrsG4-qd5SzRUPiMLcCUufMFXlHKAyXhKUgPlk9ycO_N4-98mbFa-JdVaMjMm3krXHBZdxpYoofcIiZmtKmCqtOhASMYe-KbW59JxECekx2yRkH0sDk9Lr6yggJcutfX7Nwp85tBcRas"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-display-hero">MT FRESH</span><span class="hidden">Cart</span></div><div class="flex items-center gap-space-xs"><a class="relative w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" data-path="cart" href="#"><span class="material-symbols-outlined">shopping_bag</span><span class="absolute top-1.5 right-1.5 min-w-[18px] h-[18px] px-1 bg-primary-container text-on-primary font-label-sm text-label-sm rounded-full flex items-center justify-center shadow-sm">2</span></a><div class="w-11 h-11 flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfLVEzPlZY63bb3TArVH-YIs8a0F1oIGWyaprL3UO9gaXD2vEh37OWDWFQDqlgBWXQnhRSBRT-KIEhNw4UDL6z2BTAEDa8llS70KIF1lokS71LKw50aqh_Ds7Mtk8pmwBKy31DdlpnjdY4hEx0BlOkZFSJTQ03B4ObEhHJmVpkQMLu3IndathU52AO-UyUl3e4Js2J9Ylouv8QzZFfqSbfIxPAKXMh0-sRBdjiJls"/></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-background min-h-screen"><div class="flex flex-col w-full px-gutter space-y-space-md">
+<!-- Screen Heading & Live Status -->
+<div class="flex items-center justify-between pt-space-xs">
+<div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight">My Fresh Order</h1>
+<p class="font-label-md text-label-md text-secondary font-semibold flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px] animate-pulse" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span id="bag-count-text">3 cold-pressed items in bag</span>
+</p>
+</div>
+<div class="flex items-center justify-center w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed shadow-sm">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">shopping_basket</span>
+</div>
+</div>
+<!-- Delivery Fulfillment Switcher -->
+<div class="bg-surface-container-low p-space-xs rounded-full flex gap-space-2xs shadow-sm">
+<button class="flex-1 flex items-center justify-center gap-space-xs py-2.5 px-3 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-md transition-all duration-200" id="btn-delivery" onclick="setFulfillment('delivery')">
+<span class="material-symbols-outlined text-[18px]">electric_moped</span>
+<span>Express (30-45m)</span>
+</button>
+<button class="flex-1 flex items-center justify-center gap-space-xs py-2.5 px-3 rounded-full text-on-surface-variant font-label-md text-label-md transition-all duration-200 hover:text-on-surface" id="btn-pickup" onclick="setFulfillment('pickup')">
+<span class="material-symbols-outlined text-[18px]">storefront</span>
+<span>Pickup (15m)</span>
+</button>
+</div>
+<!-- Order Items List -->
+<div class="flex flex-col space-y-space-sm" id="items-container">
+<!-- Item 1: Citrus Sunrise -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm flex gap-space-sm relative group overflow-hidden" id="cart-item-1">
+<div class="w-20 h-20 rounded-DEFAULT bg-primary-fixed flex items-center justify-center overflow-hidden flex-shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Vibrant glowing bottle of cold-pressed Citrus Sunrise juice with fresh orange, grapefruit slices, and ginger root beside it in sunlit warm kitchen ambiance, food photography, luminous tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1s1YrZwsStw5plu1pn7Egc7pqaN-AH5ygxk9e8YNoX9mYCPjZb4kTS85_M840Peg88YRkacvW6wONG4T_A6F3xDysrWlafkF_OtMx2gWmiUSGdOd8mG732HrJTk6MGd-Z3a44gQUT1e-G1TALsyEuhLVgz5t7r4CXKlhEdQt-1hoWGl7-GqYtG48EeEpOHELnwXyJX4L1Iog8JP5Js8GHnadoyJR1jcp6oA-HXgw"/>
+<span class="absolute top-1 left-1 bg-surface-container-lowest/90 px-1.5 py-0.5 rounded-full text-[9px] font-bold text-primary">COLD</span>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div class="pr-6">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Citrus Sunrise</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Medium 16oz</p>
+<div class="inline-flex items-center gap-1 mt-1 px-2 py-0.5 rounded-full bg-surface-container-low text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px]">add_circle</span>
+<span class="truncate">Extra Ginger Shot</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-2 pt-1">
+<span class="font-headline-sm text-headline-sm text-primary font-bold" id="item-price-1">$7.50</span>
+<!-- Stepper -->
+<div class="flex items-center gap-2 bg-surface-container-low px-2 py-1 rounded-full">
+<button class="w-6 h-6 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" onclick="updateQty(1, -1)">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="font-label-md text-label-md text-on-surface w-4 text-center" id="item-qty-1">1</span>
+<button class="w-6 h-6 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" onclick="updateQty(1, 1)">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<button aria-label="Remove item" class="absolute top-3 right-3 text-outline hover:text-error transition-colors p-1" onclick="removeItem(1)">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+<!-- Item 2: Green Dynamo -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm flex gap-space-sm relative group overflow-hidden" id="cart-item-2">
+<div class="w-20 h-20 rounded-DEFAULT bg-secondary-fixed flex items-center justify-center overflow-hidden flex-shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Emerald green cold-pressed juice bottle made of crisp celery, green apple, kale, and lemon on bright wooden countertop with water droplets and morning sunshine, high-key beverage styling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM4OESjrFv6wVtKW0puVwiNwWCaSHYU07-Frv5OE8G5khG5XaO4jXH7paRJ-VpMB5SacIViz1m9K4FFwibrrEzLanMrS0oJu2Jg9A8oreDBko7JE7IE1M6ykITjjsJvZYOQW7SjGeAg0alz0NQAU8uiWVH0Jzd6Wt9RQcslbfKL6AnIauChhrfwf7CD5ws57te6Ajf1fbsOQuimDZiC9isejmp-2NJ51yb35KPtyU"/>
+<span class="absolute top-1 left-1 bg-surface-container-lowest/90 px-1.5 py-0.5 rounded-full text-[9px] font-bold text-secondary">DETOX</span>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div class="pr-6">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Green Dynamo</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Large 20oz</p>
+<div class="inline-flex items-center gap-1 mt-1 px-2 py-0.5 rounded-full bg-surface-container-low text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+<span class="truncate">100% Organic Cold-Pressed</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-2 pt-1">
+<span class="font-headline-sm text-headline-sm text-primary font-bold" id="item-price-2">$8.25</span>
+<div class="flex items-center gap-2 bg-surface-container-low px-2 py-1 rounded-full">
+<button class="w-6 h-6 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" onclick="updateQty(2, -1)">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="font-label-md text-label-md text-on-surface w-4 text-center" id="item-qty-2">1</span>
+<button class="w-6 h-6 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" onclick="updateQty(2, 1)">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<button aria-label="Remove item" class="absolute top-3 right-3 text-outline hover:text-error transition-colors p-1" onclick="removeItem(2)">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+<!-- Item 3: Acai Berry Booster -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm flex gap-space-sm relative group overflow-hidden" id="cart-item-3">
+<div class="w-20 h-20 rounded-DEFAULT bg-primary-fixed-dim flex items-center justify-center overflow-hidden flex-shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Deep purple acai and antioxidant berry smoothie in glass bottle garnished with blueberries, chia seeds, and mint sprig under soft sunlit studio illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk3HXk_dsE_W8xTMpy69AHRlPFqcEBUzbfdUMAnu4tWzy-Ju0mz8wG-HZz4NMVeqzADwe8kMOhUqro-C_fiSwSOoVoUDR-l_b4THjf6sNeWMoLlzKTaiWm7Qbk9UAdZ25XHEH7sUDdt8cRkrtni2lwcjmVbTHbJMkXtWJT7F7PdrwxHZMBv0My_fpDvtb_V6YhOQnUyqavAsIJwAUhTqGQl5T6RVx8eSAr8mlvumM"/>
+<span class="absolute top-1 left-1 bg-surface-container-lowest/90 px-1.5 py-0.5 rounded-full text-[9px] font-bold text-tertiary">ANTIOX</span>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div class="pr-6">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Acai Berry Booster</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Small 12oz</p>
+<div class="inline-flex items-center gap-1 mt-1 px-2 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px]">bolt</span>
+<span class="truncate">Natural Energy</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-2 pt-1">
+<span class="font-headline-sm text-headline-sm text-primary font-bold" id="item-price-3">$6.00</span>
+<div class="flex items-center gap-2 bg-surface-container-low px-2 py-1 rounded-full">
+<button class="w-6 h-6 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" onclick="updateQty(3, -1)">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="font-label-md text-label-md text-on-surface w-4 text-center" id="item-qty-3">1</span>
+<button class="w-6 h-6 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" onclick="updateQty(3, 1)">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<button aria-label="Remove item" class="absolute top-3 right-3 text-outline hover:text-error transition-colors p-1" onclick="removeItem(3)">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Promo Code Section -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm space-y-space-xs">
+<div class="flex items-center gap-space-xs">
+<div class="flex-1 relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[20px]">local_offer</span>
+<input class="w-full bg-surface-container-low rounded-full pl-10 pr-4 py-2.5 font-body-md text-body-md text-on-surface outline-none focus:bg-surface-container transition-colors" id="promo-input" placeholder="Enter coupon code" type="text" value="FRESH10"/>
+</div>
+<button class="px-5 py-2.5 rounded-full bg-surface-container-highest hover:bg-secondary-fixed text-on-surface font-label-md text-label-md transition-colors font-semibold" onclick="applyPromo()">
+        Apply
+      </button>
+</div>
+<!-- Active Applied Promo Badge -->
+<div class="flex items-center justify-between px-3 py-1.5 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed" id="promo-badge">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span class="font-label-sm text-label-sm font-bold tracking-wide">FRESH10 applied</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">(10% off entire order)</span>
+</div>
+<button class="text-on-surface-variant hover:text-error p-0.5 flex items-center" onclick="removePromo()">
+<span class="material-symbols-outlined text-[15px]">close</span>
+</button>
+</div>
+</div>
+<!-- Thermal Guarantee Alert / Micro Delight -->
+<div class="flex items-center gap-space-sm p-space-sm rounded-DEFAULT bg-surface-container-low text-on-surface">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed-dim text-on-secondary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">ac_unit</span>
+</div>
+<div class="flex-1 text-left min-w-0">
+<p class="font-label-sm text-label-sm font-bold text-on-surface uppercase tracking-wider">Cold-Chain Guaranteed</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Packed in thermal insulated hemp pouches with ice packs.</p>
+</div>
+</div>
+<!-- Order Summary Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm space-y-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-2">Order Summary</h2>
+<div class="flex justify-between items-center text-on-surface-variant font-body-md text-body-md">
+<span>Subtotal</span>
+<span class="font-medium text-on-surface" id="subtotal-val">$21.75</span>
+</div>
+<div class="flex justify-between items-center text-secondary font-body-md text-body-md" id="discount-row">
+<span class="flex items-center gap-1">
+<span>Discount (10%)</span>
+</span>
+<span class="font-semibold" id="discount-val">-$2.18</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-body-md text-body-md">
+<span class="flex items-center gap-1">
+<span>Cold Delivery</span>
+<span class="material-symbols-outlined text-[14px] text-outline">help_outline</span>
+</span>
+<span class="font-medium text-on-surface" id="delivery-val">$2.50</span>
+</div>
+<div class="h-px bg-surface-container-high my-2"></div>
+<div class="flex justify-between items-baseline pt-1">
+<div>
+<span class="font-headline-md text-headline-md text-on-surface">Total</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Includes all local taxes</p>
+</div>
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-extrabold" id="total-val">$22.07</span>
+</div>
+</div>
+<!-- Checkout Call To Actions -->
+<div class="space-y-space-xs pb-space-sm">
+<!-- Big Primary Thumb Action Button -->
+<button class="w-full h-[52px] rounded-full bg-primary-container hover:bg-surface-tint text-on-primary font-label-lg text-label-lg flex items-center justify-between px-6 shadow-[0_8px_20px_-4px_rgba(255,107,53,0.35)] active:scale-[0.98] transition-all duration-150">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px]">lock</span>
+<span>Proceed to Checkout</span>
+</span>
+<span class="font-bold font-headline-sm text-headline-sm" id="btn-total-preview">$22.07</span>
+</button>
+<!-- Quick WhatsApp Alternate Ordering -->
+<a class="w-full h-[48px] rounded-full bg-surface-container-low hover:bg-secondary-fixed/30 text-on-surface font-label-md text-label-md flex items-center justify-center gap-2 transition-colors" href="https://wa.me/?text=Hello%20MT%20FRESH!%20I%20would%20like%20to%20place%20my%20order%20for%203%20cold-pressed%20juices%20(Total:%20$22.07)" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px] text-secondary">chat</span>
+<span class="font-semibold">Order Directly via WhatsApp</span>
+</a>
+<!-- Trust badges info footer -->
+<div class="flex items-center justify-center gap-4 text-on-surface-variant pt-2">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">check_circle</span>
+<span class="font-label-sm text-label-sm">Freshly Pressed Today</span>
+</div>
+<div class="w-1 h-1 rounded-full bg-outline-variant"></div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">verified_user</span>
+<span class="font-label-sm text-label-sm">100% Secure Checkout</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  let cartData = {
+    1: { name: "Citrus Sunrise", price: 7.50, qty: 1 },
+    2: { name: "Green Dynamo", price: 8.25, qty: 1 },
+    3: { name: "Acai Berry Booster", price: 6.00, qty: 1 }
+  };
+  let fulfillmentType = 'delivery';
+  let promoDiscountPct = 0.10;
+
+  function recalculateTotals() {
+    let subtotal = 0;
+    let totalItems = 0;
+    for (let id in cartData) {
+      subtotal += cartData[id].price * cartData[id].qty;
+      totalItems += cartData[id].qty;
+    }
+
+    let discount = promoDiscountPct > 0 ? (subtotal * promoDiscountPct) : 0;
+    let deliveryFee = fulfillmentType === 'delivery' ? 2.50 : 0.00;
+    let total = Math.max(0, subtotal - discount + deliveryFee);
+
+    const subtotalEl = document.getElementById('subtotal-val');
+    const discountEl = document.getElementById('discount-val');
+    const deliveryEl = document.getElementById('delivery-val');
+    const totalEl = document.getElementById('total-val');
+    const btnTotalEl = document.getElementById('btn-total-preview');
+    const bagCountText = document.getElementById('bag-count-text');
+
+    if (subtotalEl) subtotalEl.textContent = `$${subtotal.toFixed(2)}`;
+    if (discountEl) discountEl.textContent = `-$${discount.toFixed(2)}`;
+    if (deliveryEl) deliveryEl.textContent = deliveryFee > 0 ? `$${deliveryFee.toFixed(2)}` : 'FREE';
+    if (totalEl) totalEl.textContent = `$${total.toFixed(2)}`;
+    if (btnTotalEl) btnTotalEl.textContent = `$${total.toFixed(2)}`;
+    if (bagCountText) bagCountText.textContent = `${totalItems} cold-pressed ${totalItems === 1 ? 'item' : 'items'} in bag`;
+  }
+
+  function updateQty(id, delta) {
+    if (!cartData[id]) return;
+    let newQty = cartData[id].qty + delta;
+    if (newQty <= 0) {
+      removeItem(id);
+      return;
+    }
+    cartData[id].qty = newQty;
+    const qtyEl = document.getElementById(`item-qty-${id}`);
+    if (qtyEl) qtyEl.textContent = newQty;
+    recalculateTotals();
+  }
+
+  function removeItem(id) {
+    const el = document.getElementById(`cart-item-${id}`);
+    if (el) {
+      el.style.transition = 'opacity 0.2s ease, transform 0.2s ease';
+      el.style.opacity = '0';
+      el.style.transform = 'translateX(20px)';
+      setTimeout(() => {
+        el.remove();
+        delete cartData[id];
+        recalculateTotals();
+      }, 200);
+    }
+  }
+
+  function setFulfillment(type) {
+    fulfillmentType = type;
+    const btnDel = document.getElementById('btn-delivery');
+    const btnPick = document.getElementById('btn-pickup');
+
+    if (type === 'delivery') {
+      btnDel.className = 'flex-1 flex items-center justify-center gap-space-xs py-2.5 px-3 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-md transition-all duration-200';
+      btnPick.className = 'flex-1 flex items-center justify-center gap-space-xs py-2.5 px-3 rounded-full text-on-surface-variant font-label-md text-label-md transition-all duration-200 hover:text-on-surface';
+    } else {
+      btnPick.className = 'flex-1 flex items-center justify-center gap-space-xs py-2.5 px-3 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-md transition-all duration-200';
+      btnDel.className = 'flex-1 flex items-center justify-center gap-space-xs py-2.5 px-3 rounded-full text-on-surface-variant font-label-md text-label-md transition-all duration-200 hover:text-on-surface';
+    }
+    recalculateTotals();
+  }
+
+  function applyPromo() {
+    const input = document.getElementById('promo-input');
+    const badge = document.getElementById('promo-badge');
+    const discountRow = document.getElementById('discount-row');
+    if (input && input.value.trim().toUpperCase() === 'FRESH10') {
+      promoDiscountPct = 0.10;
+      if (badge) badge.classList.remove('hidden');
+      if (discountRow) discountRow.classList.remove('hidden');
+      recalculateTotals();
+    }
+  }
+
+  function removePromo() {
+    const badge = document.getElementById('promo-badge');
+    const discountRow = document.getElementById('discount-row');
+    const input = document.getElementById('promo-input');
+    promoDiscountPct = 0;
+    if (input) input.value = '';
+    if (badge) badge.classList.add('hidden');
+    if (discountRow) discountRow.classList.add('hidden');
+    recalculateTotals();
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-4px_20px_rgba(30,35,42,0.06)]" data-active-classes="text-primary font-label-md"><div class="flex justify-around items-center h-16 px-gutter"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm mt-space-2xs">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="menu" href="#"><span class="material-symbols-outlined text-[24px]">local_drink</span><span class="font-label-sm text-label-sm mt-space-2xs">Menu</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 transition-colors relative text-primary font-label-md" data-path="cart" href="#"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="font-label-sm text-label-sm mt-space-2xs">Cart</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="about" href="#"><span class="material-symbols-outlined text-[24px]">info</span><span class="font-label-sm text-label-sm mt-space-2xs">About</span></a></div></nav></body></html>

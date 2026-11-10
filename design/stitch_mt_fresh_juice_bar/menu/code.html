@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "secondary-fixed": "#70f8e8", "surface-tint": "#ab3500", "tertiary-container": "#c78f00", "on-secondary": "#ffffff", "secondary-fixed-dim": "#4fdbcc", "error-container": "#ffdad6", "primary-fixed": "#ffdbd0", "surface-container-low": "#f0f4fd", "error": "#ba1a1a", "primary-fixed-dim": "#ffb59d", "on-primary-container": "#5f1900", "on-surface": "#171c23", "primary-container": "#ff6b35", "secondary-container": "#70f8e8", "inverse-on-surface": "#edf1fb", "on-tertiary-container": "#432e00", "surface-container": "#eaeef8", "on-tertiary-fixed-variant": "#5e4200", "surface": "#f8f9ff", "primary": "#ab3500", "inverse-primary": "#ffb59d", "on-primary": "#ffffff", "tertiary": "#7c5800", "on-error": "#ffffff", "surface-bright": "#f8f9ff", "on-tertiary": "#ffffff", "on-secondary-fixed": "#00201d", "tertiary-fixed": "#ffdea8", "on-error-container": "#93000a", "secondary": "#006a62", "background": "#f8f9ff", "surface-container-high": "#e4e8f2", "surface-variant": "#dee2ec", "surface-container-highest": "#dee2ec", "on-secondary-fixed-variant": "#005049", "on-tertiary-fixed": "#271900", "outline-variant": "#e1bfb5", "outline": "#8d7168", "surface-container-lowest": "#ffffff", "on-background": "#171c23", "on-secondary-container": "#007168", "on-primary-fixed-variant": "#832600", "on-surface-variant": "#594139", "surface-dim": "#d6dae4", "tertiary-fixed-dim": "#ffba20", "on-primary-fixed": "#390c00", "inverse-surface": "#2c3138" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "gutter-desktop": "1.5rem", "space-xl": "2rem", "gutter-tablet": "1.25rem", "space-lg": "1.5rem", "margin-desktop": "3rem", "gutter": "1rem", "space-md": "1rem", "space-xs": "0.5rem", "space-2xl": "3rem", "space-2xs": "0.25rem", "margin": "1rem", "space-sm": "0.75rem", "margin-tablet": "2rem" }, fontFamily: { "display-hero": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-md": ["Inter"], "body-lg": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "display-hero-mobile": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "label-lg": ["Plus Jakarta Sans"] }, fontSize: { "display-hero": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "700" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><img alt="MT FRESH Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP04ziPPc1bEV_U1VmtRUrxBmHDW4DOHXQmwXoEGLh-ClK67eTP-2i9PYq11jhDI7lDKzcUm7a_sX_RpID9j6N69jV3hgrrsG4-qd5SzRUPiMLcCUufMFXlHKAyXhKUgPlk9ycO_N4-98mbFa-JdVaMjMm3krXHBZdxpYoofcIiZmtKmCqtOhASMYe-KbW59JxECekx2yRkH0sDk9Lr6yggJcutfX7Nwp85tBcRas"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-display-hero">MT FRESH</span><span class="hidden">Menu</span></div><div class="flex items-center gap-space-xs"><a class="relative w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" data-path="cart" href="#"><span class="material-symbols-outlined">shopping_bag</span><span class="absolute top-1.5 right-1.5 min-w-[18px] h-[18px] px-1 bg-primary-container text-on-primary font-label-sm text-label-sm rounded-full flex items-center justify-center shadow-sm">2</span></a><div class="w-11 h-11 flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfLVEzPlZY63bb3TArVH-YIs8a0F1oIGWyaprL3UO9gaXD2vEh37OWDWFQDqlgBWXQnhRSBRT-KIEhNw4UDL6z2BTAEDa8llS70KIF1lokS71LKw50aqh_Ds7Mtk8pmwBKy31DdlpnjdY4hEx0BlOkZFSJTQ03B4ObEhHJmVpkQMLu3IndathU52AO-UyUl3e4Js2J9Ylouv8QzZFfqSbfIxPAKXMh0-sRBdjiJls"/></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-background min-h-screen"><div class="flex flex-col w-full pb-20">
+<div class="px-gutter pt-space-xs pb-space-sm">
+<div class="relative flex items-center gap-space-xs">
+<div class="relative flex-1 flex items-center bg-surface-container-lowest rounded-full shadow-sm">
+<span class="material-symbols-outlined text-secondary absolute left-4 select-none">search</span>
+<input class="w-full h-12 pl-12 pr-4 bg-transparent rounded-full text-on-surface placeholder:text-on-surface-variant/70 font-body-md text-body-md focus:outline-none" placeholder="Search juices, smoothies, ingredients..." type="text"/>
+</div>
+<button aria-label="Filter drinks" class="w-12 h-12 rounded-full bg-surface-container-lowest shadow-sm flex items-center justify-center text-on-surface hover:text-primary active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[22px]">tune</span>
+</button>
+</div>
+</div>
+<div class="w-full overflow-x-auto scrollbar-none px-gutter py-space-xs flex items-center gap-space-xs">
+<button class="category-pill whitespace-nowrap px-4 py-2 rounded-full font-label-md text-label-md bg-on-surface text-on-primary shadow-sm transition-all" data-category="juices">
+      Fresh Juices (8)
+    </button>
+<button class="category-pill whitespace-nowrap px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all" data-category="smoothies">
+      Smoothies (6)
+    </button>
+<button class="category-pill whitespace-nowrap px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all" data-category="detox">
+      Detox &amp; Cleanses (5)
+    </button>
+<button class="category-pill whitespace-nowrap px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all" data-category="tropical">
+      Tropical Mixes (4)
+    </button>
+</div>
+<div class="px-gutter pt-space-sm flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-[0_4px_20px_-2px_rgba(255,107,53,0.08)] flex flex-col gap-space-sm relative overflow-hidden transition-transform active:scale-[0.99]">
+<div class="flex gap-space-md items-start">
+<div class="relative w-24 h-28 rounded-DEFAULT bg-primary-fixed/30 flex-shrink-0 overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Vibrant cold-pressed orange and grapefruit juice in a clear reusable minimalist glass bottle with golden sunlight reflection, fresh citrus slices on a warm textured cream surface, wholesome nutrition aesthetic, bright morning glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNcO__9E4es8aBHVZvjGyBwuOHwTVzr_22zRnvE6BBCnniV7qXJsv59bCXdBbK7muOU8X9pHYq7kKo2CpgAPprqKT_bovWoY_2fCa8cn0hI7JQ-mmjIis8RF3kCi5-Djsen17Nu-8dIAzsyWQyYUM6Oxi-TVqSWvLDPfOul4Jd5h51H7c_NO5NalPJyMP2YzJYFFC02pa3Y2GUgCGg5BY2W2Dmy1L54Y6ogdCPk7Q"/>
+<span class="absolute top-1.5 left-1.5 bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded-full shadow-sm">
+            Top Pick
+          </span>
+</div>
+<div class="flex-1 min-w-0 flex flex-col">
+<div class="flex justify-between items-start">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Citrus Sunrise</h2>
+<span class="font-headline-sm text-headline-sm text-primary font-bold ml-2">$6.50</span>
+</div>
+<div class="flex items-center gap-space-xs mt-space-2xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-0.5 text-secondary">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+              140 kcal
+            </span>
+<span>•</span>
+<span>Cold-Pressed</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+            Cold-pressed Valencia orange, ruby grapefruit, lemon &amp; hint of ginger.
+          </p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-2xs gap-space-xs">
+<div class="flex items-center gap-1.5 bg-surface-container-low p-1 rounded-full">
+<button class="size-btn px-2.5 py-1 rounded-full text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface" data-size="S">S <span class="opacity-70 text-[10px]">12oz</span></button>
+<button class="size-btn px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-surface-container-lowest text-primary shadow-sm font-bold" data-size="M">M <span class="opacity-70 text-[10px]">16oz</span></button>
+<button class="size-btn px-2.5 py-1 rounded-full text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface" data-size="L">L <span class="opacity-70 text-[10px]">20oz</span></button>
+</div>
+<button class="add-to-cart-btn h-10 px-4 rounded-full bg-primary-container text-on-primary font-label-md text-label-md flex items-center gap-1 shadow-[0_6px_16px_-4px_rgba(255,107,53,0.4)] active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[18px]">add</span>
+          Add
+        </button>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-[0_4px_20px_-2px_rgba(255,107,53,0.08)] flex flex-col gap-space-sm relative overflow-hidden transition-transform active:scale-[0.99]">
+<div class="flex gap-space-md items-start">
+<div class="relative w-24 h-28 rounded-DEFAULT bg-secondary-fixed/30 flex-shrink-0 overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Lush dark green organic cold-pressed juice bottle beaded with cold water drops, surrounded by crisp celery ribs, green apples and baby spinach on pale limestone counter, hyper-clean vibrant lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfKEEu3B7FUbKLXzpA2kdcLd8IamWG5nFtiRXKsmJ1V5Nt8T8qZEmfpApkRqwTI2sDZKsjehhRygdhykI39lD5t1hjkOugFETbAqdlykEKrVvy64WgTT8J-tWaZ22-7IwD6ZZI52fp0a3SSSIkorZ3oDX9uIj83Ijh3o2yIOL1_3sGI2g8kbtENQYcJ6XBqSftOd1warsqdAKuXxI55Y2-iHYj5bSnrovchULTo3Y"/>
+<span class="absolute top-1.5 left-1.5 bg-secondary text-on-secondary font-label-sm text-label-sm px-2 py-0.5 rounded-full shadow-sm">
+            Detox
+          </span>
+</div>
+<div class="flex-1 min-w-0 flex flex-col">
+<div class="flex justify-between items-start">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Green Dynamo</h2>
+<span class="font-headline-sm text-headline-sm text-primary font-bold ml-2">$7.25</span>
+</div>
+<div class="flex items-center gap-space-xs mt-space-2xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-0.5 text-secondary">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+              110 kcal
+            </span>
+<span>•</span>
+<span>100% Organic</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+            Organic spinach, green apple, celery, cucumber, ginger, lime.
+          </p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-2xs gap-space-xs">
+<div class="flex items-center gap-1.5 bg-surface-container-low p-1 rounded-full">
+<button class="size-btn px-2.5 py-1 rounded-full text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface" data-size="S">S <span class="opacity-70 text-[10px]">12oz</span></button>
+<button class="size-btn px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-surface-container-lowest text-primary shadow-sm font-bold" data-size="M">M <span class="opacity-70 text-[10px]">16oz</span></button>
+<button class="size-btn px-2.5 py-1 rounded-full text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface" data-size="L">L <span class="opacity-70 text-[10px]">20oz</span></button>
+</div>
+<button class="add-to-cart-btn h-10 px-4 rounded-full bg-primary-container text-on-primary font-label-md text-label-md flex items-center gap-1 shadow-[0_6px_16px_-4px_rgba(255,107,53,0.4)] active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[18px]">add</span>
+          Add
+        </button>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-[0_4px_20px_-2px_rgba(255,107,53,0.08)] flex flex-col gap-space-sm relative overflow-hidden transition-transform active:scale-[0.99]">
+<div class="flex gap-space-md items-start">
+<div class="relative w-24 h-28 rounded-DEFAULT bg-tertiary-fixed/40 flex-shrink-0 overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Rich golden yellow mango smoothie inside a bottle layered with chia seeds and purple passionfruit pulp, fresh mint leaves sprig, bright sunbeams streaming over marble tabletop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKTuPue3tsJnWJ_NPwZabSakB4wJDHtsXymWtfREVqOck4b-XLEJ7sMOeSkLWss87c4rZIg91GPG2rj0dZHj9wRQASCMKZArK9LRqc_49FTp42lDjPCgVVsealySx99CouYHrRMhsGx9Jye8BTQqT2_2DeCvPOrl43Bsfper-N_HShsrPsn1i3ESMbO5Wav33y03sfA5UB1BEeyfv921uQvImxMEoVA3-o1tuS_TM"/>
+</div>
+<div class="flex-1 min-w-0 flex flex-col">
+<div class="flex justify-between items-start">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Mango Passion Burst</h2>
+<span class="font-headline-sm text-headline-sm text-primary font-bold ml-2">$7.00</span>
+</div>
+<div class="flex items-center gap-space-xs mt-space-2xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-0.5 text-tertiary">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+              185 kcal
+            </span>
+<span>•</span>
+<span>Omega-3 Rich</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+            Alphonso mango, passion fruit, fresh mint, chia seeds.
+          </p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-2xs gap-space-xs">
+<div class="flex items-center gap-1.5 bg-surface-container-low p-1 rounded-full">
+<button class="size-btn px-2.5 py-1 rounded-full text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface" data-size="S">S <span class="opacity-70 text-[10px]">12oz</span></button>
+<button class="size-btn px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-surface-container-lowest text-primary shadow-sm font-bold" data-size="M">M <span class="opacity-70 text-[10px]">16oz</span></button>
+<button class="size-btn px-2.5 py-1 rounded-full text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface" data-size="L">L <span class="opacity-70 text-[10px]">20oz</span></button>
+</div>
+<button class="add-to-cart-btn h-10 px-4 rounded-full bg-primary-container text-on-primary font-label-md text-label-md flex items-center gap-1 shadow-[0_6px_16px_-4px_rgba(255,107,53,0.4)] active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[18px]">add</span>
+          Add
+        </button>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-[0_4px_20px_-2px_rgba(255,107,53,0.08)] flex flex-col gap-space-sm relative overflow-hidden transition-transform active:scale-[0.99]">
+<div class="flex gap-space-md items-start">
+<div class="relative w-24 h-28 rounded-DEFAULT bg-error-container/40 flex-shrink-0 overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Deep ruby purple beet and red apple cold-pressed beverage in an artisan glass jar with lemon zest, earthy fresh organic ingredients background, warm studio photography lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAERXlW9EEP3I01aKsiOAy0lWcd2A3uvjxpG4NVtLpPdLYo5Bkn2vSbTcqJlgM54sfBk_VXvCavs0Sv0KdUjHC3hIAru8yc0XsCIx0VGVZ6x9UGn2WLt0RlRRAT_WgrRYzMyLKjW_BLnsmiEqmZa-pag90sBpWprhpTAylKGg3QusRI-gTi1D2nAEPYIAFcq2BLcRcQlXSzBmbw2-PCstSHTMYPzxgcdxFS0M-luAw"/>
+</div>
+<div class="flex-1 min-w-0 flex flex-col">
+<div class="flex justify-between items-start">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Beetroot Radiance</h2>
+<span class="font-headline-sm text-headline-sm text-primary font-bold ml-2">$6.75</span>
+</div>
+<div class="flex items-center gap-space-xs mt-space-2xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-0.5 text-primary">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+              130 kcal
+            </span>
+<span>•</span>
+<span>Antioxidant</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+            Organic red beets, carrot, green apple, lemon.
+          </p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-2xs gap-space-xs">
+<div class="flex items-center gap-1.5 bg-surface-container-low p-1 rounded-full">
+<button class="size-btn px-2.5 py-1 rounded-full text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface" data-size="S">S <span class="opacity-70 text-[10px]">12oz</span></button>
+<button class="size-btn px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-surface-container-lowest text-primary shadow-sm font-bold" data-size="M">M <span class="opacity-70 text-[10px]">16oz</span></button>
+<button class="size-btn px-2.5 py-1 rounded-full text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface" data-size="L">L <span class="opacity-70 text-[10px]">20oz</span></button>
+</div>
+<button class="add-to-cart-btn h-10 px-4 rounded-full bg-primary-container text-on-primary font-label-md text-label-md flex items-center gap-1 shadow-[0_6px_16px_-4px_rgba(255,107,53,0.4)] active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[18px]">add</span>
+          Add
+        </button>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-[0_4px_20px_-2px_rgba(255,107,53,0.08)] flex flex-col gap-space-sm relative overflow-hidden transition-transform active:scale-[0.99]">
+<div class="flex gap-space-md items-start">
+<div class="relative w-24 h-28 rounded-DEFAULT bg-tertiary-container/30 flex-shrink-0 overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Golden bright turmeric elixir juice in frosted glass bottle with fresh knobby turmeric root, sliced carrots, citrus blossoms on sun-drenched warm wooden table." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBU1lTZi1IPqh2TTAap9LhC-lnLuBXKSO0mUJwWnOvnoMXA7diXOq1cWpgpUdtdXwto2X79p78-CBsnvdRUNb6KjApA6UGxO5Br8cQ0ReOazrmYnmWTEyVUOwuMW-R_kSA3Ty9DChlRghut7v6cbDBsGSyBCEz6JQ0IAINnYO6x0f9BzznNH_RfY819TPviz361P3iugnSglVRUIj2k9DgkYIolrzIrMeVdHbKGv1c"/>
+<span class="absolute top-1.5 left-1.5 bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm px-2 py-0.5 rounded-full shadow-sm">
+            Immunity
+          </span>
+</div>
+<div class="flex-1 min-w-0 flex flex-col">
+<div class="flex justify-between items-start">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Golden Turmeric Tonic</h2>
+<span class="font-headline-sm text-headline-sm text-primary font-bold ml-2">$6.50</span>
+</div>
+<div class="flex items-center gap-space-xs mt-space-2xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-0.5 text-tertiary">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">shield</span>
+              95 kcal
+            </span>
+<span>•</span>
+<span>Anti-Inflammatory</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+            Turmeric root, carrot, orange, black pepper oil.
+          </p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-2xs gap-space-xs">
+<div class="flex items-center gap-1.5 bg-surface-container-low p-1 rounded-full">
+<button class="size-btn px-2.5 py-1 rounded-full text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface" data-size="S">S <span class="opacity-70 text-[10px]">12oz</span></button>
+<button class="size-btn px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-surface-container-lowest text-primary shadow-sm font-bold" data-size="M">M <span class="opacity-70 text-[10px]">16oz</span></button>
+<button class="size-btn px-2.5 py-1 rounded-full text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface" data-size="L">L <span class="opacity-70 text-[10px]">20oz</span></button>
+</div>
+<button class="add-to-cart-btn h-10 px-4 rounded-full bg-primary-container text-on-primary font-label-md text-label-md flex items-center gap-1 shadow-[0_6px_16px_-4px_rgba(255,107,53,0.4)] active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[18px]">add</span>
+          Add
+        </button>
+</div>
+</div>
+</div>
+<div class="fixed bottom-20 left-0 w-full px-gutter z-40 pointer-events-none">
+<div class="max-w-md mx-auto pointer-events-auto">
+<div class="bg-inverse-surface/95 backdrop-blur-md text-inverse-on-surface rounded-full px-space-md py-3 shadow-[0_12px_32px_rgba(0,0,0,0.25)] flex items-center justify-between transition-all transform hover:scale-[1.02]">
+<div class="flex items-center gap-3">
+<div class="relative w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+<span class="absolute -top-1 -right-1 w-4 h-4 bg-secondary-fixed text-on-secondary-fixed text-[10px] font-bold rounded-full flex items-center justify-center">2</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-inverse-on-surface/80">2 cold juices</span>
+<span class="font-headline-sm text-headline-sm text-inverse-on-surface font-bold leading-tight">$13.75</span>
+</div>
+</div>
+<a class="flex items-center gap-1 bg-surface-container-lowest text-on-surface font-label-md text-label-md px-4 py-2 rounded-full shadow-sm hover:bg-primary-fixed transition-colors" data-path="cart" href="#">
+<span>Checkout</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const categoryButtons = document.querySelectorAll('.category-pill');
+    categoryButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        categoryButtons.forEach(b => {
+          b.classList.remove('bg-on-surface', 'text-on-primary', 'shadow-sm');
+          b.classList.add('bg-surface-container-lowest', 'text-on-surface');
+        });
+        btn.classList.add('bg-on-surface', 'text-on-primary', 'shadow-sm');
+        btn.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+      });
+    });
+
+    const sizeButtons = document.querySelectorAll('.size-btn');
+    sizeButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const parent = btn.parentElement;
+        parent.querySelectorAll('.size-btn').forEach(b => {
+          b.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-bold');
+          b.classList.add('text-on-surface-variant');
+        });
+        btn.classList.remove('text-on-surface-variant');
+        btn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-bold');
+      });
+    });
+
+    const addButtons = document.querySelectorAll('.add-to-cart-btn');
+    addButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const originalContent = btn.innerHTML;
+        btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">check</span> Added`;
+        btn.classList.add('bg-secondary', 'text-on-secondary');
+        btn.classList.remove('bg-primary-container', 'text-on-primary');
+        setTimeout(() => {
+          btn.innerHTML = originalContent;
+          btn.classList.remove('bg-secondary', 'text-on-secondary');
+          btn.classList.add('bg-primary-container', 'text-on-primary');
+        }, 1200);
+      });
+    });
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-4px_20px_rgba(30,35,42,0.06)]" data-active-classes="text-primary font-label-md"><div class="flex justify-around items-center h-16 px-gutter"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm mt-space-2xs">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 transition-colors text-primary font-label-md" data-path="menu" href="#"><span class="material-symbols-outlined text-[24px]">local_drink</span><span class="font-label-sm text-label-sm mt-space-2xs">Menu</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors relative" data-path="cart" href="#"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="font-label-sm text-label-sm mt-space-2xs">Cart</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="about" href="#"><span class="material-symbols-outlined text-[24px]">info</span><span class="font-label-sm text-label-sm mt-space-2xs">About</span></a></div></nav></body></html>

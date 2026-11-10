@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "secondary-fixed": "#70f8e8", "surface-tint": "#ab3500", "tertiary-container": "#c78f00", "on-secondary": "#ffffff", "secondary-fixed-dim": "#4fdbcc", "error-container": "#ffdad6", "primary-fixed": "#ffdbd0", "surface-container-low": "#f0f4fd", "error": "#ba1a1a", "primary-fixed-dim": "#ffb59d", "on-primary-container": "#5f1900", "on-surface": "#171c23", "primary-container": "#ff6b35", "secondary-container": "#70f8e8", "inverse-on-surface": "#edf1fb", "on-tertiary-container": "#432e00", "surface-container": "#eaeef8", "on-tertiary-fixed-variant": "#5e4200", "surface": "#f8f9ff", "primary": "#ab3500", "inverse-primary": "#ffb59d", "on-primary": "#ffffff", "tertiary": "#7c5800", "on-error": "#ffffff", "surface-bright": "#f8f9ff", "on-tertiary": "#ffffff", "on-secondary-fixed": "#00201d", "tertiary-fixed": "#ffdea8", "on-error-container": "#93000a", "secondary": "#006a62", "background": "#f8f9ff", "surface-container-high": "#e4e8f2", "surface-variant": "#dee2ec", "surface-container-highest": "#dee2ec", "on-secondary-fixed-variant": "#005049", "on-tertiary-fixed": "#271900", "outline-variant": "#e1bfb5", "outline": "#8d7168", "surface-container-lowest": "#ffffff", "on-background": "#171c23", "on-secondary-container": "#007168", "on-primary-fixed-variant": "#832600", "on-surface-variant": "#594139", "surface-dim": "#d6dae4", "tertiary-fixed-dim": "#ffba20", "on-primary-fixed": "#390c00", "inverse-surface": "#2c3138" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "gutter-desktop": "1.5rem", "space-xl": "2rem", "gutter-tablet": "1.25rem", "space-lg": "1.5rem", "margin-desktop": "3rem", "gutter": "1rem", "space-md": "1rem", "space-xs": "0.5rem", "space-2xl": "3rem", "space-2xs": "0.25rem", "margin": "1rem", "space-sm": "0.75rem", "margin-tablet": "2rem" }, fontFamily: { "display-hero": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-md": ["Inter"], "body-lg": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "display-hero-mobile": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "label-lg": ["Plus Jakarta Sans"] }, fontSize: { "display-hero": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "700" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><img alt="MT FRESH Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP04ziPPc1bEV_U1VmtRUrxBmHDW4DOHXQmwXoEGLh-ClK67eTP-2i9PYq11jhDI7lDKzcUm7a_sX_RpID9j6N69jV3hgrrsG4-qd5SzRUPiMLcCUufMFXlHKAyXhKUgPlk9ycO_N4-98mbFa-JdVaMjMm3krXHBZdxpYoofcIiZmtKmCqtOhASMYe-KbW59JxECekx2yRkH0sDk9Lr6yggJcutfX7Nwp85tBcRas"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-display-hero">MT FRESH</span><span class="hidden">Home</span></div><div class="flex items-center gap-space-xs"><a class="relative w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" data-path="cart" href="#"><span class="material-symbols-outlined">shopping_bag</span><span class="absolute top-1.5 right-1.5 min-w-[18px] h-[18px] px-1 bg-primary-container text-on-primary font-label-sm text-label-sm rounded-full flex items-center justify-center shadow-sm">2</span></a><div class="w-11 h-11 flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfLVEzPlZY63bb3TArVH-YIs8a0F1oIGWyaprL3UO9gaXD2vEh37OWDWFQDqlgBWXQnhRSBRT-KIEhNw4UDL6z2BTAEDa8llS70KIF1lokS71LKw50aqh_Ds7Mtk8pmwBKy31DdlpnjdY4hEx0BlOkZFSJTQ03B4ObEhHJmVpkQMLu3IndathU52AO-UyUl3e4Js2J9Ylouv8QzZFfqSbfIxPAKXMh0-sRBdjiJls"/></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Location & Live Status Banner -->
+<section class="px-gutter pt-space-xs pb-space-sm">
+<div class="bg-surface-container-lowest rounded-full p-space-xs flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+</span>
+<div class="flex flex-col min-w-0 pr-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface truncate">Downtown Juice Bar</span>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary inline-block animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-secondary truncate">Open Today: 7:30 AM - 8:00 PM</span>
+</div>
+</div>
+</div>
+<button class="bg-surface-container-low hover:bg-surface-container text-on-surface rounded-full px-space-sm py-1.5 flex items-center gap-1 text-label-sm font-label-sm transition-all flex-shrink-0">
+<span>Map</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Hero Section -->
+<section class="px-gutter pb-space-md">
+<div class="relative bg-gradient-to-br from-primary-fixed via-primary-fixed-dim/40 to-surface-container-lowest rounded-lg p-space-md overflow-hidden shadow-sm">
+<!-- Decorative Floating Juice Splash Glows -->
+<div class="absolute -top-12 -right-12 w-48 h-48 bg-primary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-8 -left-8 w-40 h-40 bg-secondary-fixed/40 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-xs">
+<!-- Floating Badges -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm px-3 py-1 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-[14px]">eco</span>
+            100% Organic
+          </span>
+<span class="inline-flex items-center gap-1 bg-surface-container-lowest/90 backdrop-blur-sm text-secondary font-label-sm text-label-sm px-3 py-1 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+            Fresh Daily
+          </span>
+</div>
+<!-- Headline & Copy -->
+<h1 class="font-display-hero-mobile text-display-hero-mobile text-on-surface leading-tight tracking-tight mt-space-2xs">
+          Fresh Juice,<br/><span class="text-primary-container">Made for You.</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[280px]">
+          100% cold-pressed raw fruits with zero added sugar or preservatives.
+        </p>
+<!-- CTA & Mini Proof -->
+<div class="pt-space-xs flex items-center gap-space-sm">
+<button class="bg-primary-container hover:bg-surface-tint text-on-primary font-label-lg text-label-lg px-space-lg h-[52px] rounded-full flex items-center justify-center gap-2 shadow-[0_8px_20px_-4px_rgba(255,107,53,0.38)] active:scale-[0.98] transition-all">
+<span>Order Now</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<div class="flex items-center -space-x-2">
+<span class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center font-label-sm text-label-sm text-on-secondary-fixed shadow-sm font-bold">4.9★</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm pl-4">1.2k+ happy sips</span>
+</div>
+</div>
+</div>
+<!-- Hero Visual Accent Image -->
+<div class="relative mt-space-md w-full h-44 rounded-DEFAULT overflow-hidden shadow-inner bg-surface-container">
+<img class="w-full h-full object-cover object-center" data-alt="A sunlit, crystal clear glass bottle of cold-pressed vibrant citrus juice placed beside fresh sliced oranges, ruby grapefruit, and sprigs of green garden mint on a warm rustic stone countertop. High natural lighting, organic juice droplets on glass, soft pastel cream backdrop, professional culinary product photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrCnwQojsnCWWxQV8mEdPps8L25MQ-1Bi5Nmixwv-bVs_XEAGUI4ZYEXUiCFzpwZUzQS_3Lz9baBW0GO3XOr0BEakhUEPEq0CXuuFF2GaZ6dXSM-3mYkKTQ8Snxw0ozIzBCNqrktXAbYVdPiYqw0oPgfIhPLD9BzSdVJyaenUi3VdZ0k2p7z7UKERF3_k7c0Gct5vFsL5LUyJEFlNVqntV39kSdfqxyRbARdFalhM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/40 via-transparent to-transparent flex items-end p-space-sm">
+<span class="text-on-primary font-label-md text-label-md bg-surface-tint/80 backdrop-blur-md px-space-xs py-1 rounded-full">
+            Cold Pressed in Small Batches
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- Category Pills Filter Bar -->
+<section class="px-gutter pb-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Explore Flavors</span>
+<span class="font-label-sm text-label-sm text-primary cursor-pointer">View Menu</span>
+</div>
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-1" id="categoryPillList">
+<button class="px-4 py-2 rounded-full font-label-md text-label-md bg-on-surface text-on-primary transition-all flex-shrink-0 shadow-sm category-pill active-cat">
+        All
+      </button>
+<button class="px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all flex-shrink-0 shadow-sm category-pill">
+        Fresh Juices
+      </button>
+<button class="px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all flex-shrink-0 shadow-sm category-pill">
+        Smoothies
+      </button>
+<button class="px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all flex-shrink-0 shadow-sm category-pill">
+        Detox Boost
+      </button>
+<button class="px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all flex-shrink-0 shadow-sm category-pill">
+        Tropical Mixes
+      </button>
+</div>
+</section>
+<!-- Featured Juices List / Grid -->
+<section class="px-gutter pb-space-lg flex flex-col gap-space-md">
+<!-- Item 1: Citrus Sunrise -->
+<div class="bg-surface-container-lowest rounded-lg p-space-sm shadow-[0_4px_16px_-2px_rgba(255,107,53,0.08)] flex flex-col gap-space-sm">
+<div class="relative w-full h-44 rounded-DEFAULT overflow-hidden bg-primary-fixed/20 flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="A clean branded glass bottle of MT Fresh Citrus Sunrise juice glowing with liquid amber and orange, condensation droplets on glass, garnished with sliced grapefruit, fresh ginger root, and turmeric root beside it. Minimal warm kitchen background with bright morning sunbeams, studio beverage photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB73H-3Zup7aXV1FdEtLi_-FLtxHkhUPiKk2j9h8K7htLssnScuzEswurI0I4d2lWcS-73ikiZ9_d7f97ahFZnsz9no7Xlo2m0OF0J1gUaGdNB5bVSmqk9bLXAagwtDNofdFIwFqecjOrp2PHro-9t-pzophC0NLI3DUv7pDmO7KdBAs-idKvjW0zhNwyxi4oOjM7NiK8sDBjWh1OhXsgNqQ7OOcdVKtFhJzq8wzE8"/>
+<span class="absolute top-space-xs left-space-xs bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm px-2.5 py-1 rounded-full shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">local_fire_department</span>
+          125 kcal
+        </span>
+<span class="absolute top-space-xs right-space-xs bg-primary-container text-on-primary font-label-sm text-label-sm px-2.5 py-1 rounded-full shadow-sm">
+          Bestseller
+        </span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Citrus Sunrise</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Orange, grapefruit, fresh ginger, golden turmeric
+            </p>
+</div>
+<span class="font-headline-md text-headline-md text-primary flex-shrink-0">$6.50</span>
+</div>
+<!-- Tags -->
+<div class="flex flex-wrap items-center gap-1.5 pt-1">
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded-full">Immunity</span>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded-full">Vitamin C</span>
+<span class="bg-secondary-fixed/40 text-secondary font-label-sm text-label-sm px-2 py-0.5 rounded-full">Anti-Inflammatory</span>
+</div>
+<!-- Bottom Action Row -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">water_drop</span>
+<span>350ml Bottle</span>
+</div>
+<button class="bg-primary-container hover:bg-surface-tint text-on-primary font-label-md text-label-md px-4 py-2.5 rounded-full flex items-center gap-1.5 shadow-sm active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 2: Green Vitality -->
+<div class="bg-surface-container-lowest rounded-lg p-space-sm shadow-[0_4px_16px_-2px_rgba(46,196,182,0.08)] flex flex-col gap-space-sm">
+<div class="relative w-full h-44 rounded-DEFAULT overflow-hidden bg-secondary-fixed/20 flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="A cold pressed glass bottle of vibrant emerald green juice named Green Vitality, with natural moisture beads, surrounded by fresh organic tuscan kale leaves, crisp green apple wedges, cucumber ribbons, and fresh mint leaves. High key sunny ambient natural daylight, clean wholesome mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0Xq185dejtfYT5gvmpBqXodwAj5tSWfCb-FRFjuHke62_Fc-Qhfn8MuodakCtO85SE7NMQ0vo68BLLw5VU3Xb7EG4gy7JNmv1Aj4UvuLAifExYGvUvb2s4MT2P29u9akSaLHswvoPUS_-7tJgW42Q_6xbKe79OmBavCnezFLqOO4bpxov-Bx33_TdczsZhVFGL9joXIPNHOG6pTQax5zlxNWfc4T0JaqElC1rtCY"/>
+<span class="absolute top-space-xs left-space-xs bg-surface-container-lowest/90 backdrop-blur-md text-secondary font-label-sm text-label-sm px-2.5 py-1 rounded-full shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">local_fire_department</span>
+          95 kcal
+        </span>
+<span class="absolute top-space-xs right-space-xs bg-secondary text-on-secondary font-label-sm text-label-sm px-2.5 py-1 rounded-full shadow-sm">
+          Detox Pick
+        </span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Green Vitality</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Organic kale, green apple, cucumber, lemon, fresh mint
+            </p>
+</div>
+<span class="font-headline-md text-headline-md text-primary flex-shrink-0">$7.00</span>
+</div>
+<!-- Tags -->
+<div class="flex flex-wrap items-center gap-1.5 pt-1">
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded-full">Alkalizing</span>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded-full">Hydration</span>
+<span class="bg-secondary-fixed/40 text-secondary font-label-sm text-label-sm px-2 py-0.5 rounded-full">Zero Sugar</span>
+</div>
+<!-- Bottom Action Row -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">water_drop</span>
+<span>350ml Bottle</span>
+</div>
+<button class="bg-primary-container hover:bg-surface-tint text-on-primary font-label-md text-label-md px-4 py-2.5 rounded-full flex items-center gap-1.5 shadow-sm active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 3: Berry Glow -->
+<div class="bg-surface-container-lowest rounded-lg p-space-sm shadow-[0_4px_16px_-2px_rgba(255,107,53,0.08)] flex flex-col gap-space-sm">
+<div class="relative w-full h-44 rounded-DEFAULT overflow-hidden bg-primary-fixed-dim/20 flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="A transparent bottle containing intense rich magenta-red cold pressed juice called Berry Glow, set against fresh wild blueberries, ripe strawberries, acai bowl accents, and a cracked young green coconut. Soft luminous studio light with clean reflective surface and organic juice splashes in background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCjp2jTYX2B01OdwcXTvRrfxZ0lFL8fSQU4X3TbyjQFPKVOOJKghGoHehaOockiGdQ9peyrldEXVRZNf1HbPlk0K_SeBpfz962y_I6vmkUq0mGQWF0QzUpsTdlnpd1VnAyJyGsFjJCpbKftAbzeIPEmn_iKiQxu0EayHmsrmX6MBBWXrLr7dIvwkJD5xvN1bR1fg-HvQPhZRt5aVmIDdoEd8tTYKtsHlvUn_D20Tk"/>
+<span class="absolute top-space-xs left-space-xs bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm px-2.5 py-1 rounded-full shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">local_fire_department</span>
+          140 kcal
+        </span>
+<span class="absolute top-space-xs right-space-xs bg-surface-tint text-on-primary font-label-sm text-label-sm px-2.5 py-1 rounded-full shadow-sm">
+          Skin Glow
+        </span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Berry Glow</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Wild strawberry, plump blueberry, wild acai, coconut water
+            </p>
+</div>
+<span class="font-headline-md text-headline-md text-primary flex-shrink-0">$7.50</span>
+</div>
+<!-- Tags -->
+<div class="flex flex-wrap items-center gap-1.5 pt-1">
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded-full">Antioxidants</span>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded-full">Skin Health</span>
+<span class="bg-secondary-fixed/40 text-secondary font-label-sm text-label-sm px-2 py-0.5 rounded-full">Electrolytes</span>
+</div>
+<!-- Bottom Action Row -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">water_drop</span>
+<span>350ml Bottle</span>
+</div>
+<button class="bg-primary-container hover:bg-surface-tint text-on-primary font-label-md text-label-md px-4 py-2.5 rounded-full flex items-center gap-1.5 shadow-sm active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Add</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us Benefit Cards (3-Column Flow) -->
+<section class="px-gutter pb-space-lg">
+<div class="text-center pb-space-sm">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold">The MT Standard</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mt-0.5">Why MT FRESH?</h2>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<!-- Benefit 1 -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-space-xs flex flex-col items-center text-center shadow-sm">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary mb-space-xs flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">nutrition</span>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface font-bold leading-tight">100% Raw &amp; Cold-Pressed</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-tight mt-1">Preserves 100% live enzymes</p>
+</div>
+<!-- Benefit 2 -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-space-xs flex flex-col items-center text-center shadow-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary mb-space-xs flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">water_bottle</span>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface font-bold leading-tight">Zero Sugar or Water</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-tight mt-1">Pure fruit, no additives ever</p>
+</div>
+<!-- Benefit 3 -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-space-xs flex flex-col items-center text-center shadow-sm">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary mb-space-xs flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">agriculture</span>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface font-bold leading-tight">Farm-Fresh Produce</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-tight mt-1">Picked within 24h of pressing</p>
+</div>
+</div>
+</section>
+<!-- Customer Reviews Card -->
+<section class="px-gutter pb-space-lg">
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm relative overflow-hidden">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-1 text-tertiary-container">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-fixed/50 px-2 py-0.5 rounded-full font-semibold">Verified Sippers</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed">
+        “The Citrus Sunrise replaced my morning double-shot espresso completely. You can genuinely taste the crisp freshness of real fruit with no watery aftertaste.”
+      </p>
+<div class="flex items-center gap-space-xs pt-space-sm mt-space-xs">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center font-bold text-on-primary-fixed text-label-md">
+          SL
+        </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Sophia Lin</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Daily Subscriber • Downtown Studio</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Order via WhatsApp & Contact Card -->
+<section class="px-gutter pb-space-md">
+<div class="bg-gradient-to-r from-secondary to-on-secondary-container rounded-lg p-space-md text-on-secondary shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-full bg-on-secondary/20 flex items-center justify-center text-on-secondary">
+<span class="material-symbols-outlined text-[22px]">chat</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold">Instant Order on WhatsApp</span>
+<span class="font-body-sm text-body-sm text-on-secondary/80">Skip the queue or organize catering</span>
+</div>
+</div>
+<a class="bg-on-secondary text-secondary hover:bg-surface font-label-lg text-label-lg px-space-md py-3 rounded-full flex items-center justify-center gap-2 active:scale-95 transition-all text-center" href="https://wa.me/1234567890" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>Chat with Juice Barista</span>
+</a>
+</div>
+</section>
+<!-- Footer & Social Links -->
+<footer class="px-gutter pb-space-xl pt-space-xs flex flex-col items-center text-center gap-space-sm">
+<div class="flex items-center gap-space-md text-on-surface-variant">
+<a aria-label="Instagram" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">photo_camera</span>
+</a>
+<a aria-label="Facebook" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">thumb_up</span>
+</a>
+<a aria-label="TikTok" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">play_circle</span>
+</a>
+</div>
+<div class="flex flex-col gap-0.5">
+<p class="font-label-sm text-label-sm text-on-surface font-bold">MT FRESH JUICE BAR</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">742 Evergreen Terrace, Downtown • Est. 2024</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px] mt-1">© 2025 MT Fresh Co. Crafted with love &amp; vitamins.</p>
+</div>
+</footer>
+</div>
+<script>
+  // Interactive pill selection micro-interaction
+  const pills = document.querySelectorAll('.category-pill');
+  pills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      pills.forEach(p => {
+        p.classList.remove('bg-on-surface', 'text-on-primary');
+        p.classList.add('bg-surface-container-lowest', 'text-on-surface');
+      });
+      pill.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+      pill.classList.add('bg-on-surface', 'text-on-primary');
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-4px_20px_rgba(30,35,42,0.06)]" data-active-classes="text-primary font-label-md"><div class="flex justify-around items-center h-16 px-gutter"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 transition-colors text-primary font-label-md" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm mt-space-2xs">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="menu" href="#"><span class="material-symbols-outlined text-[24px]">local_drink</span><span class="font-label-sm text-label-sm mt-space-2xs">Menu</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors relative" data-path="cart" href="#"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="font-label-sm text-label-sm mt-space-2xs">Cart</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="about" href="#"><span class="material-symbols-outlined text-[24px]">info</span><span class="font-label-sm text-label-sm mt-space-2xs">About</span></a></div></nav></body></html>

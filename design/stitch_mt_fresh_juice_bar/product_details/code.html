@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "secondary-fixed": "#70f8e8", "surface-tint": "#ab3500", "tertiary-container": "#c78f00", "on-secondary": "#ffffff", "secondary-fixed-dim": "#4fdbcc", "error-container": "#ffdad6", "primary-fixed": "#ffdbd0", "surface-container-low": "#f0f4fd", "error": "#ba1a1a", "primary-fixed-dim": "#ffb59d", "on-primary-container": "#5f1900", "on-surface": "#171c23", "primary-container": "#ff6b35", "secondary-container": "#70f8e8", "inverse-on-surface": "#edf1fb", "on-tertiary-container": "#432e00", "surface-container": "#eaeef8", "on-tertiary-fixed-variant": "#5e4200", "surface": "#f8f9ff", "primary": "#ab3500", "inverse-primary": "#ffb59d", "on-primary": "#ffffff", "tertiary": "#7c5800", "on-error": "#ffffff", "surface-bright": "#f8f9ff", "on-tertiary": "#ffffff", "on-secondary-fixed": "#00201d", "tertiary-fixed": "#ffdea8", "on-error-container": "#93000a", "secondary": "#006a62", "background": "#f8f9ff", "surface-container-high": "#e4e8f2", "surface-variant": "#dee2ec", "surface-container-highest": "#dee2ec", "on-secondary-fixed-variant": "#005049", "on-tertiary-fixed": "#271900", "outline-variant": "#e1bfb5", "outline": "#8d7168", "surface-container-lowest": "#ffffff", "on-background": "#171c23", "on-secondary-container": "#007168", "on-primary-fixed-variant": "#832600", "on-surface-variant": "#594139", "surface-dim": "#d6dae4", "tertiary-fixed-dim": "#ffba20", "on-primary-fixed": "#390c00", "inverse-surface": "#2c3138" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "gutter-desktop": "1.5rem", "space-xl": "2rem", "gutter-tablet": "1.25rem", "space-lg": "1.5rem", "margin-desktop": "3rem", "gutter": "1rem", "space-md": "1rem", "space-xs": "0.5rem", "space-2xl": "3rem", "space-2xs": "0.25rem", "margin": "1rem", "space-sm": "0.75rem", "margin-tablet": "2rem" }, fontFamily: { "display-hero": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-md": ["Inter"], "body-lg": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "display-hero-mobile": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "label-lg": ["Plus Jakarta Sans"] }, fontSize: { "display-hero": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "700" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><button aria-label="Back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><img alt="MT FRESH Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP04ziPPc1bEV_U1VmtRUrxBmHDW4DOHXQmwXoEGLh-ClK67eTP-2i9PYq11jhDI7lDKzcUm7a_sX_RpID9j6N69jV3hgrrsG4-qd5SzRUPiMLcCUufMFXlHKAyXhKUgPlk9ycO_N4-98mbFa-JdVaMjMm3krXHBZdxpYoofcIiZmtKmCqtOhASMYe-KbW59JxECekx2yRkH0sDk9Lr6yggJcutfX7Nwp85tBcRas"/><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Product Details</h1></div><div class="flex items-center gap-space-xs"><div class="w-11 h-11 flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfLVEzPlZY63bb3TArVH-YIs8a0F1oIGWyaprL3UO9gaXD2vEh37OWDWFQDqlgBWXQnhRSBRT-KIEhNw4UDL6z2BTAEDa8llS70KIF1lokS71LKw50aqh_Ds7Mtk8pmwBKy31DdlpnjdY4hEx0BlOkZFSJTQ03B4ObEhHJmVpkQMLu3IndathU52AO-UyUl3e4Js2J9Ylouv8QzZFfqSbfIxPAKXMh0-sRBdjiJls"/></div></div></div></header><main class="flex flex-col relative w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full pb-32">
+<!-- Hero Juice Presentation Area -->
+<div class="relative w-full px-gutter pt-space-xs">
+<div class="relative w-full rounded-lg bg-surface-container-low overflow-hidden shadow-md">
+<!-- Ambient Sunburst Gradient Wash -->
+<div class="absolute inset-0 bg-gradient-to-b from-primary-fixed/30 via-transparent to-surface-container-low"></div>
+<!-- Badges Layer -->
+<div class="absolute top-4 left-4 z-10 flex flex-wrap gap-space-xs">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[14px]">local_fire_department</span>
+          Bestseller
+        </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[14px]">chevron_left</span>
+          Immunity Boost
+        </span>
+</div>
+<!-- Favorite Micro-action -->
+<button aria-label="Add to favorites" class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-surface/90 backdrop-blur-md text-primary flex items-center justify-center shadow-sm active:scale-90 transition-transform" id="fav-btn">
+<span class="material-symbols-outlined text-[20px]" id="fav-icon">favorite</span>
+</button>
+<!-- Main Visual Bottle Container -->
+<div class="relative w-full h-72 flex items-center justify-center p-space-md">
+<!-- Soft Radial Backlight -->
+<div class="absolute w-48 h-48 rounded-full bg-primary-container/20 blur-2xl"></div>
+<img class="relative z-0 h-full w-auto max-w-[80%] object-contain drop-shadow-xl select-none pointer-events-none" data-alt="Premium glass bottle of vibrant golden-orange Citrus Sunrise cold-pressed juice surrounded by fresh organic sliced Valencia oranges, pink ruby grapefruit halves, and crushed ginger on a luminous warm sunlit countertop with subtle dewy condensation droplets and soft morning lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAASsWLKH0hmMRYvjLfUReYeNBz81aBBSGKkH_ucQYfI7mgDjpMnH1UG459y0u6aRD0Evr_BlUUpNYprqDzaunMg5tpnQ8_4Sf9Mm-twZDBU4VRP7Nu85bPOz60seolzAkOrOziTSSA3edGq00raiH9lM3Nw7fSBrFjh4O42d2JWmAZ6sAq8NejaaJYW7y3FUe7H5yFtHghkOEoS3PN1qAgJDVi40pg6o87xyimVuc"/>
+</div>
+<!-- Freshness Indicator Bottom Bar -->
+<div class="px-space-md py-space-xs bg-surface-container/60 backdrop-blur-sm flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px]">eco</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Raw • Cold-Pressed Daily</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-tertiary">schedule</span>
+<span>Consume within 72 hrs</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Product Meta & Title Section -->
+<div class="px-gutter pt-space-md flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex-1">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight">Citrus Sunrise</h2>
+<!-- Ratings Bar -->
+<div class="flex items-center gap-space-xs mt-1">
+<div class="flex items-center text-tertiary-container">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-bold">4.9</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(128 reviews)</span>
+</div>
+</div>
+<!-- Price Display -->
+<div class="flex flex-col items-end">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight font-extrabold" id="display-price">$6.50</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="display-size-label">Medium • 16 oz</span>
+</div>
+</div>
+<!-- Sensory Description -->
+<p class="font-body-md text-body-md text-on-surface-variant pt-space-2xs leading-relaxed">
+      A revitalizing burst of morning energy crafted from cold-pressed ripe Valencia oranges, crisp ruby red grapefruit, and a spicy kick of Peruvian ginger.
+    </p>
+</div>
+<!-- Key Ingredients Horizontal Scroll -->
+<div class="pt-space-md flex flex-col gap-space-xs">
+<div class="px-gutter flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface">Pure Ingredients</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">100% Whole Plant</span>
+</div>
+<div class="flex gap-space-xs overflow-x-auto px-gutter py-1 no-scrollbar">
+<!-- Valencia Orange -->
+<div class="flex items-center gap-2 px-3 py-2 rounded-full bg-surface-container text-on-surface flex-shrink-0 shadow-sm">
+<div class="w-6 h-6 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed font-label-sm text-label-sm">🍊</div>
+<span class="font-label-md text-label-md font-medium">Valencia Orange</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">45%</span>
+</div>
+<!-- Ruby Grapefruit -->
+<div class="flex items-center gap-2 px-3 py-2 rounded-full bg-surface-container text-on-surface flex-shrink-0 shadow-sm">
+<div class="w-6 h-6 rounded-full bg-primary-fixed-dim flex items-center justify-center text-on-primary-container font-label-sm text-label-sm">🍹</div>
+<span class="font-label-md text-label-md font-medium">Ruby Grapefruit</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">35%</span>
+</div>
+<!-- Ginger Root -->
+<div class="flex items-center gap-2 px-3 py-2 rounded-full bg-surface-container text-on-surface flex-shrink-0 shadow-sm">
+<div class="w-6 h-6 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed font-label-sm text-label-sm">🫚</div>
+<span class="font-label-md text-label-md font-medium">Ginger Root</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">10%</span>
+</div>
+<!-- Organic Lemon -->
+<div class="flex items-center gap-2 px-3 py-2 rounded-full bg-surface-container text-on-surface flex-shrink-0 shadow-sm">
+<div class="w-6 h-6 rounded-full bg-tertiary-fixed-dim flex items-center justify-center text-on-tertiary-container font-label-sm text-label-sm">🍋</div>
+<span class="font-label-md text-label-md font-medium">Organic Lemon</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">10%</span>
+</div>
+</div>
+</div>
+<!-- Nutrition Facts Bento Highlights -->
+<div class="px-gutter pt-space-md flex flex-col gap-space-xs">
+<span class="font-label-lg text-label-lg text-on-surface">Nutritional Value</span>
+<div class="grid grid-cols-3 gap-space-xs">
+<div class="bg-surface-container-low rounded-DEFAULT p-space-sm flex flex-col items-center text-center shadow-sm">
+<span class="material-symbols-outlined text-[20px] text-primary mb-1">bolt</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">140</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Calories</span>
+</div>
+<div class="bg-surface-container-low rounded-DEFAULT p-space-sm flex flex-col items-center text-center shadow-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary mb-1">vital_signs</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">220%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Vitamin C</span>
+</div>
+<div class="bg-surface-container-low rounded-DEFAULT p-space-sm flex flex-col items-center text-center shadow-sm">
+<span class="material-symbols-outlined text-[20px] text-tertiary mb-1">check_circle</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">0g</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Added Sugar</span>
+</div>
+</div>
+</div>
+<!-- Bottle Size Selector -->
+<div class="px-gutter pt-space-lg flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface">Select Size</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Recyclable Glass Bottle</span>
+</div>
+<div class="grid grid-cols-3 gap-space-xs p-1 bg-surface-container rounded-full">
+<!-- Small -->
+<button class="size-option py-2.5 rounded-full flex flex-col items-center justify-center text-on-surface-variant transition-all hover:text-on-surface" id="size-btn-small" onclick="selectSize('small', 5.50, 'Small • 12 oz')">
+<span class="font-label-md text-label-md font-semibold">Small</span>
+<span class="font-label-sm text-label-sm">12oz • $5.50</span>
+</button>
+<!-- Medium (Selected Default) -->
+<button class="size-option py-2.5 rounded-full flex flex-col items-center justify-center bg-surface-container-lowest text-primary shadow-sm transition-all" id="size-btn-medium" onclick="selectSize('medium', 6.50, 'Medium • 16 oz')">
+<span class="font-label-md text-label-md font-bold">Medium</span>
+<span class="font-label-sm text-label-sm font-semibold">16oz • $6.50</span>
+</button>
+<!-- Large -->
+<button class="size-option py-2.5 rounded-full flex flex-col items-center justify-center text-on-surface-variant transition-all hover:text-on-surface" id="size-btn-large" onclick="selectSize('large', 7.50, 'Large • 20 oz')">
+<span class="font-label-md text-label-md font-semibold">Large</span>
+<span class="font-label-sm text-label-sm">20oz • $7.50</span>
+</button>
+</div>
+</div>
+<!-- Booster Add-ons -->
+<div class="px-gutter pt-space-lg flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface">Functional Boosters</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Customize blend</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- Addon 1 -->
+<label class="flex items-center justify-between p-3.5 rounded-DEFAULT bg-surface-container-low cursor-pointer transition-colors active:scale-[0.99] select-none shadow-sm">
+<div class="flex items-center gap-3">
+<input class="w-5 h-5 rounded-md text-secondary accent-secondary cursor-pointer" data-price="1.00" id="addon-ginger" onchange="updateTotal()" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Extra Ginger Shot</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Intense digestive heat</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold">+$1.00</span>
+</label>
+<!-- Addon 2 -->
+<label class="flex items-center justify-between p-3.5 rounded-DEFAULT bg-surface-container-low cursor-pointer transition-colors active:scale-[0.99] select-none shadow-sm">
+<div class="flex items-center gap-3">
+<input class="w-5 h-5 rounded-md text-secondary accent-secondary cursor-pointer" data-price="0.75" id="addon-chia" onchange="updateTotal()" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Chia Seeds</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Fiber &amp; Omega-3 sustained release</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold">+$0.75</span>
+</label>
+<!-- Addon 3 -->
+<label class="flex items-center justify-between p-3.5 rounded-DEFAULT bg-surface-container-low cursor-pointer transition-colors active:scale-[0.99] select-none shadow-sm">
+<div class="flex items-center gap-3">
+<input class="w-5 h-5 rounded-md text-secondary accent-secondary cursor-pointer" data-price="1.50" id="addon-protein" onchange="updateTotal()" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Whey Protein Boost</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">+15g clean unflavored protein</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold">+$1.50</span>
+</label>
+</div>
+</div>
+<!-- Recommendation Section: You May Also Like -->
+<div class="pt-space-xl flex flex-col gap-space-sm">
+<div class="px-gutter flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">You May Also Like</span>
+<button class="font-label-md text-label-md text-secondary font-bold flex items-center gap-0.5">
+        See All
+        <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Horizontal Carousel -->
+<div class="flex gap-space-sm overflow-x-auto px-gutter pb-2 no-scrollbar">
+<!-- Card 1: Green Dynamo -->
+<div class="w-56 flex-shrink-0 bg-surface-container-lowest rounded-DEFAULT p-space-sm shadow-md flex flex-col">
+<div class="relative w-full h-36 rounded-DEFAULT bg-surface-container-low overflow-hidden flex items-center justify-center mb-space-xs">
+<div class="absolute w-24 h-24 rounded-full bg-secondary-fixed/30 blur-xl"></div>
+<img class="relative z-0 h-28 w-auto object-contain drop-shadow" data-alt="Tall chilled glass bottle containing deep emerald cold-pressed green juice with organic celery, cucumber stalks, and fresh green apple slices bathed in clean crisp morning light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDt9faI2WRR35OQceIlMUBzemAZ-Q4aSc4Ci5K4PkOU7vOGrD2lNz4gX9DSN0XmUa3NkII8coXkqURbz8EJABeS3hNF1doIERooiU9dXT_IHD8AJr2vPMlhUF59IoW2NNp_JJMe2g-8kOzY2udOLxG7OmaHSgDxuNX-bJY7PFg8LvJduh8jtxsqhDgYssJRsF-g8AvGkh0lkao0vZG8bPzTyFLMtYPK7uNU1sIa6Dc"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">Detox</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold truncate">Green Dynamo</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Kale, Celery, Green Apple</span>
+<div class="flex items-center justify-between mt-space-sm">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">$6.75</span>
+<button aria-label="Add Green Dynamo" class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-sm active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+<!-- Card 2: Berry Glow -->
+<div class="w-56 flex-shrink-0 bg-surface-container-lowest rounded-DEFAULT p-space-sm shadow-md flex flex-col">
+<div class="relative w-full h-36 rounded-DEFAULT bg-surface-container-low overflow-hidden flex items-center justify-center mb-space-xs">
+<div class="absolute w-24 h-24 rounded-full bg-primary-fixed-dim/30 blur-xl"></div>
+<img class="relative z-0 h-28 w-auto object-contain drop-shadow" data-alt="Artisanal glass bottle of deep crimson cold-pressed berry juice surrounded by scattered blueberries, organic blackberries, and wild pomegranate seeds with water droplets on high-key luminous background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9WUGqoPXGhosA151O9Vkx1TCJrFliV-gwtU8O7mhAHjHneyVFEbt3q0iG6bPqnux4yp3i5ZhTpLMprJ8iOA8g6NNWtSUkQrWVJuGFBwChV4F2XHNju9ggwY0Anl-Ud2mUwNA6_dUJi0vqzvetXjZKi4Fvn5eC3Sk-VlOqgQPaYJYM0DphLCN5yYfFehHk0kxGrvPW3lU42NfnY3nDWjat3wVh4tJnHyA_91WvIJw"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm">Antioxidant</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold truncate">Berry Glow</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Blueberry, Pomegranate, Acai</span>
+<div class="flex items-center justify-between mt-space-sm">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">$7.00</span>
+<button aria-label="Add Berry Glow" class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-sm active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Floating Sticky Action Bar -->
+<div class="fixed bottom-0 left-0 right-0 z-40 px-gutter pb-safe pt-2 bg-surface/90 backdrop-blur-xl shadow-xl">
+<div class="max-w-md mx-auto flex items-center gap-space-sm py-2">
+<!-- Quantity Stepper -->
+<div class="flex items-center bg-surface-container-high rounded-full p-1 shadow-sm flex-shrink-0">
+<button aria-label="Decrease quantity" class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface active:scale-90 transition-transform" onclick="changeQuantity(-1)">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="w-9 text-center font-headline-sm text-headline-sm text-on-surface font-bold select-none" id="qty-count">1</span>
+<button aria-label="Increase quantity" class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface active:scale-90 transition-transform" onclick="changeQuantity(1)">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<!-- Add To Cart Primary Action -->
+<button class="flex-1 h-[52px] rounded-full bg-primary-container text-on-primary flex items-center justify-center gap-2 shadow-[0_8px_20px_-4px_rgba(255,107,53,0.35)] active:scale-[0.98] transition-all font-label-lg text-label-lg" id="btn-add-cart" onclick="triggerAddedEffect()">
+<span class="material-symbols-outlined text-[20px]" id="cart-icon">shopping_bag</span>
+<span id="cart-btn-text">Add to Cart • $6.50</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  let currentBasePrice = 6.50;
+  let currentQuantity = 1;
+
+  function selectSize(size, price, labelText) {
+    currentBasePrice = price;
+    document.querySelectorAll('.size-option').forEach(btn => {
+      btn.className = 'size-option py-2.5 rounded-full flex flex-col items-center justify-center text-on-surface-variant transition-all hover:text-on-surface';
+    });
+    const selectedBtn = document.getElementById('size-btn-' + size);
+    if (selectedBtn) {
+      selectedBtn.className = 'size-option py-2.5 rounded-full flex flex-col items-center justify-center bg-surface-container-lowest text-primary shadow-sm transition-all';
+    }
+    const sizeLabel = document.getElementById('display-size-label');
+    if (sizeLabel) sizeLabel.innerHTML = labelText;
+    updateTotal();
+  }
+
+  function changeQuantity(delta) {
+    const next = currentQuantity + delta;
+    if (next >= 1 && next <= 12) {
+      currentQuantity = next;
+      document.getElementById('qty-count').textContent = currentQuantity;
+      updateTotal();
+    }
+  }
+
+  function updateTotal() {
+    let addonSum = 0;
+    const ginger = document.getElementById('addon-ginger');
+    const chia = document.getElementById('addon-chia');
+    const protein = document.getElementById('addon-protein');
+
+    if (ginger && ginger.checked) addonSum += parseFloat(ginger.dataset.price);
+    if (chia && chia.checked) addonSum += parseFloat(chia.dataset.price);
+    if (protein && protein.checked) addonSum += parseFloat(protein.dataset.price);
+
+    const singleItemTotal = currentBasePrice + addonSum;
+    const grandTotal = (singleItemTotal * currentQuantity).toFixed(2);
+
+    const displayPrice = document.getElementById('display-price');
+    if (displayPrice) {
+      displayPrice.textContent = '$' + singleItemTotal.toFixed(2);
+    }
+
+    const cartBtnText = document.getElementById('cart-btn-text');
+    if (cartBtnText) {
+      cartBtnText.textContent = 'Add to Cart \u2022 $' + grandTotal;
+    }
+  }
+
+  function triggerAddedEffect() {
+    const btn = document.getElementById('btn-add-cart');
+    const label = document.getElementById('cart-btn-text');
+    const icon = document.getElementById('cart-icon');
+    if (!btn || !label || !icon) return;
+
+    const originalText = label.textContent;
+    btn.classList.add('bg-secondary');
+    btn.classList.remove('bg-primary-container');
+    icon.textContent = 'check';
+    label.textContent = 'Added to Tote!';
+
+    setTimeout(() => {
+      btn.classList.remove('bg-secondary');
+      btn.classList.add('bg-primary-container');
+      icon.textContent = 'shopping_bag';
+      updateTotal();
+    }, 1400);
+  }
+
+  const favBtn = document.getElementById('fav-btn');
+  const favIcon = document.getElementById('fav-icon');
+  if (favBtn && favIcon) {
+    favBtn.addEventListener('click', () => {
+      const isFilled = favIcon.style.fontVariationSettings.includes("'FILL' 1");
+      if (isFilled) {
+        favIcon.style.fontVariationSettings = "'FILL' 0";
+      } else {
+        favIcon.style.fontVariationSettings = "'FILL' 1";
+      }
+    });
+  }
+</script></main></body></html>
