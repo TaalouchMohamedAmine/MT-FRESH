@@ -7,7 +7,7 @@
         <div class="relative overflow-hidden rounded-shell bg-surface-low">
             @if ($product->is_featured)<span class="absolute start-4 top-4 z-10 rounded-full bg-primary px-3 py-1 text-xs font-bold text-white">{{ __('site.product.bestseller') }}</span>@endif
             @if ($product->image_url)
-                <img src="{{ $product->image_url }}" alt="{{ $product->translated('name') }}" fetchpriority="high" class="aspect-square w-full object-cover">
+                <img src="{{ $product->image_url }}" onerror="this.onerror=null;this.src='{{ asset('images/juice-placeholder.svg') }}';" alt="{{ $product->translated('name') }}" fetchpriority="high" class="aspect-square w-full object-cover">
             @endif
             <div class="flex items-center justify-between gap-3 bg-surface-container/80 px-5 py-3 text-xs font-bold text-secondary"><span><span class="material-symbols-outlined me-1 align-middle text-sm">eco</span>{{ __('site.product.fresh_daily') }}</span><span>{{ __('site.product.consume') }}</span></div>
         </div>

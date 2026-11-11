@@ -3,7 +3,7 @@
 <article class="group flex h-full flex-col overflow-hidden rounded-card border border-outline-variant/40 bg-white shadow-card transition hover:-translate-y-1 hover:shadow-card-hover">
     <a href="{{ route('store.product', ['locale' => app()->getLocale(), 'product' => $product->slug]) }}" class="relative block aspect-[4/3] overflow-hidden bg-primary-container/10">
         @if ($product->image_url)
-            <img src="{{ $product->image_url }}" alt="{{ $product->translated('name') }}" loading="lazy" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+            <img src="{{ $product->image_url }}" onerror="this.onerror=null;this.src='{{ asset('images/juice-placeholder.svg') }}';" alt="{{ $product->translated('name') }}" loading="lazy" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
         @else
             <div class="grid h-full place-items-center text-6xl" aria-hidden="true">🍊</div>
         @endif

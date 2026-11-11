@@ -29,7 +29,7 @@
         </div>
         <div class="relative z-10 mt-6 flex h-52 items-center justify-center sm:h-64 lg:mt-0 lg:h-full">
             @if ($featured->first()?->image_url)
-                <img src="{{ $featured->first()->image_url }}" alt="{{ $featured->first()->translated('name') }} fresh juice" fetchpriority="high" class="h-full max-w-full rounded-card object-cover shadow-xl lg:max-h-80">
+                <img src="{{ $featured->first()->image_url }}" onerror="this.onerror=null;this.src='{{ asset('images/juice-placeholder.svg') }}';" alt="{{ $featured->first()->translated('name') }} fresh juice" fetchpriority="high" class="h-full max-w-full rounded-card object-cover shadow-xl lg:max-h-80">
             @else
                 <div class="grid size-48 place-items-center rounded-full bg-primary-container/10 text-8xl" aria-hidden="true">🍊</div>
             @endif

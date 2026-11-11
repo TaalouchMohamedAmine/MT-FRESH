@@ -10,7 +10,7 @@
         @forelse ($lines as $line)
             <article wire:key="cart-{{ $line->size->id }}" class="mb-3 flex gap-4 rounded-card border border-outline-variant/40 bg-white p-3 shadow-card sm:p-4">
                 <div class="size-24 shrink-0 overflow-hidden rounded-xl bg-primary-container/10 sm:size-28">
-                    @if ($line->product->image_url)<img src="{{ $line->product->image_url }}" alt="{{ $line->product->translated('name') }}" loading="lazy" class="h-full w-full object-cover">@else<div class="grid h-full place-items-center text-4xl" aria-hidden="true">🍊</div>@endif
+                    @if ($line->product->image_url)<img src="{{ $line->product->image_url }}" onerror="this.onerror=null;this.src='{{ asset('images/juice-placeholder.svg') }}';" alt="{{ $line->product->translated('name') }}" loading="lazy" class="h-full w-full object-cover">@else<div class="grid h-full place-items-center text-4xl" aria-hidden="true">🍊</div>@endif
                 </div>
                 <div class="flex min-w-0 flex-1 flex-col justify-between py-1">
                     <div class="flex items-start justify-between gap-2">
